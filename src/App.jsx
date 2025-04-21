@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
 
+import { BrowserRouter,Route,Routes } from 'react-router-dom'; 
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Feature from './components/Feature';
 function App() {
  
 
@@ -11,7 +12,14 @@ function App() {
   return (
     <>
     <div>
-      Hello Pdf Meger
+      
+
+      <Navbar/>
+      <Routes>
+      <Route path='/home' element={<Home/>}/>
+      <Route path='/feature' element={<Feature/>}/>
+      
+      </Routes>
     </div>
     </>
 
