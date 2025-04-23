@@ -88,3 +88,111 @@
     font-weight: bold;
     text-align: center;
 }
+
+/* Feature.css */
+.mergefiles {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mergefiles h2 {
+    color: #2c3e50;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.mergefiles form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.file-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-input-group label {
+    font-weight: 600;
+    color: #3a4a5a;
+    margin-bottom: 6px;
+}
+
+.file-input-group input[type="file"] {
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    transition: border-color 0.3s;
+    font-size: 14px;
+}
+
+.file-input-group input[type="file"]:hover {
+    border-color: #6c63ff;
+}
+
+/* Custom styling for file inputs */
+.file-input-group input[type="file"]::file-selector-button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-input-group input[type="file"]::file-selector-button:hover {
+    background-color: #5a52d5;
+}
+
+.merge-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.merge-button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+.merge-button:active {
+    transform: translateY(0);
+}
+
+/* Status message styling */
+.status-message {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
