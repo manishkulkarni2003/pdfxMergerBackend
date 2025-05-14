@@ -4,6 +4,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Feature from './components/Feature';
+import PdftoWord from './components/PdftoWord';
 function App() {
  
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
       <Route path='/home' element={<Home/>}/>
       <Route path='/feature' element={<Feature/>}/>
+      <Route path='/pdftoword' element={<PdftoWord/>}/>
       
       </Routes>
     </div>
